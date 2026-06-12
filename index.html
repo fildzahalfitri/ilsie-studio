@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilsie Studio | Ildza's Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">ILSIE STUDIO.</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#studio-room">Control Room</a>
+            <a href="#about">Artist</a>
+            <a href="#records">Records</a>
+            <a href="#contact">Plug In</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <!-- Decorative Y2K Shapes -->
+        <div class="shape shape-star1">✦</div>
+        <div class="shape shape-star2">✦</div>
+        <div class="shape shape-squiggle">〜</div>
+        
+        <div class="hero-container">
+            <div class="hero-text animate-fade">
+                <h1 class="hero-title">Welcome to <br><span class="text-pink">Ilsie</span> <span class="text-blue">Studio</span> 💽✨</h1>
+                <p class="hero-subtitle">Where Management Meets Creative Exploration</p>
+                <a href="#studio-room" class="btn-retro btn-play">Press Play ▶</a>
+            </div>
+            
+            <div class="hero-visual animate-fade">
+                <div class="vinyl-player">
+                    <div class="tonearm"></div>
+                    <div class="vinyl-disc">
+                        <div class="vinyl-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="studio-room" id="studio-room">
+        <h2 class="section-title animate-fade">🎛️ The Control Room</h2>
+        <p class="section-subtitle animate-fade">Click the interactive laptop screen to explore or use the panels below!</p>
+
+        <div class="desk-canvas animate-fade">
+            <div class="desk-surface">
+                <!-- Decorative Desk Items -->
+                <div class="desk-item plant" data-tooltip="Fresh ideas growing 🌿">🌱</div>
+                <div class="desk-item lamp" data-tooltip="Burning the midnight oil 💡">💡</div>
+                <div class="desk-item headphones" data-tooltip="Listening to Retro Hits 🎧">🎧</div>
+                
+                <div class="laptop-container" id="laptop-hub">
+                    <div class="laptop-screen">
+                        <div class="os-bar">
+                            <span class="os-dot red"></span>
+                            <span class="os-dot yellow"></span>
+                            <span class="os-dot green"></span>
+                            <span class="os-title">ilsieOS v1.0</span>
+                        </div>
+                        <div class="os-desktop">
+                            <div class="app-icon" data-target="modal-about">
+                                <span class="app-emoji">👩‍🎨</span>
+                                <span class="app-label">Artist</span>
+                            </div>
+                            <div class="app-icon" data-target="modal-records">
+                                <span class="app-emoji">🏆</span>
+                                <span class="app-label">Records</span>
+                            </div>
+                            <div class="app-icon" data-target="modal-skills">
+                                <span class="app-emoji">👑</span>
+                                <span class="app-label">Skills</span>
+                            </div>
+                            <div class="app-icon" data-target="modal-contact">
+                                <span class="app-emoji">🔌</span>
+                                <span class="app-label">PlugIn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="laptop-base"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modal-overlay">
+            <div class="retro-window" id="modal-about">
+                <div class="window-header bar-pink">
+                    <span>artist_profile.exe</span>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="window-content">
+                    <h3>Hello World! I'm Ildza</h3>
+                    <p>Information Systems student at Universitas Brawijaya. Active leader, planner, and manager of ideas!</p>
+                    <a href="#about" class="window-link">Go to Full Section →</a>
+                </div>
+            </div>
+
+            <div class="retro-window" id="modal-records">
+                <div class="window-header bar-blue">
+                    <span>achievements_log.bat</span>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="window-content">
+                    <h3>The Studio Records</h3>
+                    <p>Featuring 2 International Gold Medals, 10+ leadership roles, and tech industry internships.</p>
+                    <a href="#records" class="window-link">Open Tracklist →</a>
+                </div>
+            </div>
+
+            <div class="retro-window" id="modal-skills">
+                <div class="window-header bar-green">
+                    <span>core_competencies.sys</span>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="window-content">
+                    <h3>Engine Diagnostics</h3>
+                    <ul>
+                        <li>👑 Leadership & Management</li>
+                        <li>🎤 Public Relations & MC</li>
+                        <li>🎬 Social Media & Content Strategy</li>
+                        <li>🧩 Adaptive Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="retro-window" id="modal-contact">
+                <div class="window-header bar-lavender">
+                    <span>network_connect.cfg</span>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="window-content">
+                    <h3>Establish Connection</h3>
+                    <p>Let's spin some records together. Pop into my social feeds!</p>
+                    <a href="#contact" class="window-link">Plug In Now →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image-side animate-fade">
+                <div class="polaroid-frame">
+                    <img src="assets/foto-ildza.jpg.jpeg" alt="Ildza" class="polaroid-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80'">
+                    <div class="polaroid-caption">Ildza // 2026 📼</div>
+                </div>
+            </div>
+            
+            <div class="about-text-side animate-fade">
+                <div class="badge-ub">Currently @ Universitas Brawijaya · GPA 3.95/4.00 🎓</div>
+                <h2 class="about-title">Meet the Artist <span>👩‍🎨</span></h2>
+                <p class="about-bio">
+                    Hi! I'm <strong>Ildza</strong>, an Information Systems student at Universitas Brawijaya. A passionate leader, creative thinker, and detail-oriented team player. Welcome to my creative space where management meets visual exploration!
+                </p>
+                
+                <div class="skills-tags">
+                    <span class="tag tag-pink">Leadership 👑</span>
+                    <span class="tag tag-blue">Event Ops 🎤</span>
+                    <span class="tag tag-green">Content Creation 🎬</span>
+                    <span class="tag tag-lavender">Problem Solving 🧩</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="records" id="records">
+        <h2 class="section-title animate-fade">💿 The Studio Records</h2>
+        
+        <div class="tab-navigation animate-fade">
+            <button class="tab-btn active" data-tab="winner">🏆 Winner</button>
+            <button class="tab-btn" data-tab="organisasi">🤝 Organisasi</button>
+            <button class="tab-btn" data-tab="kepanitiaan">🔥 Kepanitiaan</button>
+            <button class="tab-btn" data-tab="magang">💼 Magang</button>
+        </div>
+
+        <div class="tab-container animate-fade">
+            
+            <div class="tab-content active" id="tab-winner">
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev">◀</button>
+                    <div class="carousel-track">
+                        <div class="retro-card card-blue">
+                            <span class="card-year">2024</span>
+                            <div class="card-icon">🥇</div>
+                            <h3>Gold Medalist</h3>
+                            <h4>International Science Project Competition (ISPC)</h4>
+                            <p>Organized by IYSA. Social Science Category. Project: "CUPERTEST : Curcumin Paper Test For Borax And Formalin Detector".</p>
+                        </div>
+                        <div class="retro-card card-blue">
+                            <span class="card-year">2024</span>
+                            <div class="card-icon">🧪</div>
+                            <h3>Gold Medalist</h3>
+                            <h4>Indonesia International Invention Expo (IIIEX)</h4>
+                            <p>Organized by IYSA. Chemistry Category. Project: "CUPERTEST : Curcumin Paper Test For Borax And Formalin Detector".</p>
+                        </div>
+                    </div>
+                    <button class="carousel-nav next">▶</button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-organisasi">
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev">◀</button>
+                    <div class="carousel-track">
+                        <div class="retro-card card-green">
+                            <span class="card-year">2025-Pres</span>
+                            <h3>Ketua Angkatan SI</h3>
+                            <h4>Universitas Brawijaya</h4>
+                            <p>Dipercaya memimpin & mengoordinasi 250+ mahasiswa angkatan 2025, menyusun proker, dan menjadi jembatan utama komunikasi.</p>
+                        </div>
+                        <div class="retro-card card-green">
+                            <span class="card-year">2026-Pres</span>
+                            <h3>Pengurus PSDM</h3>
+                            <h4>UKM FORMAPI UB</h4>
+                            <p>Mengelola dan mengembangkan SDM organisasi, bertanggung jawab atas rangkaian program kerja internal.</p>
+                        </div>
+                        <div class="retro-card card-green">
+                            <span class="card-year">2026-Pres</span>
+                            <h3>Pengurus PSDM</h3>
+                            <h4>KBMDSI FILKOM UB</h4>
+                            <p>Berpartisipasi aktif membangun ekosistem kolaboratif dan suportif bagi seluruh elemen mahasiswa departemen.</p>
+                        </div>
+                        <div class="retro-card card-green">
+                            <span class="card-year">2022-2024</span>
+                            <h3>Seksi Bidang 5 & 9</h3>
+                            <h4>OSIS SMAN 11 Semarang</h4>
+                            <p>Mengelola aspirasi demokrasi serta mengomandani media kreatif informasi siswa (Feeds Instagram & TikTok).</p>
+                        </div>
+                    </div>
+                    <button class="carousel-nav next">▶</button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-kepanitiaan">
+                <div class="hook-banner">🔥 10+ Dipercaya Sebagai Leader / Ketua Pelaksana</div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev">◀</button>
+                    <div class="carousel-track">
+                        <div class="retro-card card-pink">
+                            <span class="card-year">2026</span>
+                            <h3>Ketua Pelaksana</h3>
+                            <h4>FORTERY 2026 — KBMDSI UB</h4>
+                            <p>Memimpin perancangan indikator orientasi mahasiswa baru DSI secara objektif dan terstruktur.</p>
+                        </div>
+                        <div class="retro-card card-pink">
+                            <span class="card-year">2024</span>
+                            <h3>Ketua Pelaksana</h3>
+                            <h4>Evolution 11 Semarang</h4>
+                            <p>Penanggung jawab utama Pentas Seni & Musik Akhir Tahun. Mengatur alur teknis, anggaran, dan koordinasi lintas sie.</p>
+                        </div>
+                        <div class="retro-card card-pink">
+                            <span class="card-year">2026</span>
+                            <h3>Ketua Divisi Acara</h3>
+                            <h4>Upgrading Vol. 1 FORMAPI UB</h4>
+                            <p>Konseptor utama teknis eksekusi acara serta koordinator pembagian tugas tim operasional.</p>
+                        </div>
+                        <div class="retro-card card-pink">
+                            <span class="card-year">2026</span>
+                            <h3>Ketua Divisi Humas</h3>
+                            <h4>ASCEND 3.0 KBMDSI UB</h4>
+                            <p>Penanggung jawab citra acara, koordinasi publikasi, dan jembatan eksternal/internal.</p>
+                        </div>
+                        <div class="retro-card card-pink">
+                            <span class="card-year">2026</span>
+                            <h3>Ketua Divisi Sponsor</h3>
+                            <h4>IT FEST 2026 KBMDSI UB</h4>
+                            <p>Menyusun strategi fundraising, negosiasi kemitraan korporat untuk pendanaan acara skala besar.</p>
+                        </div>
+                        <div class="retro-card card-pink">
+                            <span class="card-year">2026</span>
+                            <h3>Ketua Divisi SQC</h3>
+                            <h4>SOS Krida DSI FILKOM UB</h4>
+                            <p>Mengawasi standar kualitas operasional kegiatan dan evaluasi teknis harian acara.</p>
+                        </div>
+                        <div class="retro-card card-pink">
+                            <span class="card-year">2023-2024</span>
+                            <h3>Editor Majalah</h3>
+                            <h4>Adiva Magz (Annual Magazine)</h4>
+                            <p>Melakukan kurasi artikel, menyusun rancangan layout, serta visual sampul tahunan sekolah.</p>
+                        </div>
+                    </div>
+                    <button class="carousel-nav next">▶</button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-magang">
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev">◀</button>
+                    <div class="carousel-track">
+                        <div class="retro-card card-lavender">
+                            <span class="card-year">2026-Pres</span>
+                            <h3>Project Officer Support</h3>
+                            <h4>CodeLab Studio Indonesia</h4>
+                            <p>Mengelola administrasi program nasional dan menjadi PIC utama perlombaan nasional, mengoordinasi ratusan peserta.</p>
+                        </div>
+                        <div class="retro-card card-lavender">
+                            <span class="card-year">2026</span>
+                            <h3>UI/UX Designer Intern</h3>
+                            <h4>RAION Community</h4>
+                            <p>Melakukan user research, wireframing, high-fidelity prototyping, dan kolaborasi produk digital lintas divisi.</p>
+                        </div>
+                    </div>
+                    <button class="carousel-nav next">▶</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="plug-in" id="contact">
+        <h2 class="section-title animate-fade">🔌 Plug In</h2>
+        <p class="section-subtitle animate-fade">Connect directly to my channels!</p>
+        
+        <div class="social-grid animate-fade">
+            <a href="https://instagram.com/fildzah.alfitri" target="_blank" class="grid-btn ig-color">📷 Instagram</a>
+            <a href="https://wa.me/6288215329655" target="_blank" class="grid-btn wa-color">💬 WhatsApp</a>
+            <a href="https://line.me/ti/p/~ildzaaa" target="_blank" class="grid-btn line-color">🟢 LINE ID</a>
+            <a href="https://linkedin.com/in/Fildzah-Alfitri" target="_blank" class="grid-btn in-color">💼 LinkedIn</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2>Catch Me! 👋</h2>
+        <p>Let's collaborate or just say hi!</p>
+        <a href="mailto:ildzalfitri@gmail.com" class="btn-retro btn-email">📧 Email Me</a>
+        <p class="copyright">© 2026 Ilsie Studio — Built with 💖 for Final Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
